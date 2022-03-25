@@ -56,6 +56,7 @@ reset.addEventListener("click", () => {
   Array.from(boxtexts).forEach((e) => {
     e.innerText = "";
   });
+  
   turn = "x";
   gameStatus[0].innerText = "Player X Start Playing";
 });
