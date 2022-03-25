@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  background-color: #181b2e;
+}
+
+.heading {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading h1 {
+  font-family: inherit;
+  font-size: 60px;
+  font-weight: 1000;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+}
+.heading p {
+  border-bottom: 5px solid rgb(19, 19, 172);
+  font-family: inherit;
+  font-size: 60px;
+  font-weight: 1000;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.gameContainer {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  /* position: relative; */
+}
+
+.box {
+  font-size: 6rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box:hover {
+  cursor: pointer;
+  background-color: #212845;
+}
+.box-r {
+  border-right: 3px solid rgb(19, 19, 172);
+}
+.box-b {
+  border-bottom: 3px solid rgb(19, 19, 172);
+}
+.resetButton {
+  position: absolute;
+  left: 75vw;
+  top: 22vw;
+  border: none;
+  background-color: #f8d320;
+  padding: 20px 50px 20px 50px;
+  object-fit: contain;
+  font-family: inherit;
+  font-size: 1.3rem;
+  box-shadow: 0 0 10px 15px rgb(0, 0, 0, 0.3);
+}
+.resetButton:hover {
+  cursor: pointer;
+}
+
+.gameStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  background-color: #f8d320;
+  padding: 20px 50px 20px 50px;
+  object-fit: contain;
+  font-family: inherit;
+}
+
+@media only screen and (max-width: 800px) {
+  .box {
+    font-size: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .gameStatus {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+  .heading h1 {
+    font-size: 45px;
+  }
+  .heading p {
+    font-size: 45px;
+  }
+  .resetButton {
+    padding: 10px 25px 10px 25px;
+    font-size: 1rem;
+    margin-left: -80px;
+    position: static;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .box {
+    font-size: 30px;
+  }
+}
